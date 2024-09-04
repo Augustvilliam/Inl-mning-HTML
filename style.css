@@ -1,0 +1,61 @@
+:root {
+    --clr-blå: #F3F6FF
+}
+
+
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    width: 1920;
+    
+}
+
+.C1{
+    height: 876px;
+    border: 1px solid green;
+
+}
+
+.C2{
+    border: 1px solid green;
+}
+
+.C3{
+    border: 1px solid green;
+    background-color: var(--clr-blå);
+    height: 1077px;
+}
+
+.C4{
+    border: 1px solid green;
+}
+
+.C5{
+    border: 1px solid green;
+    height: 542;
+    background-color: var(--clr-blå);
+}
+
+.C6{
+    border: 1px solid green;
+
+}
+
+.navbar{
+    background-color: blue;
+
+}
+.knapp{
+    display: grid;
+    height: 78px;
+    
+    li{
+        grid-row:1;
+        text-align: center;
+        list-style: none;
+        
+    }
+}
