@@ -1,17 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+
+
+
 :root {
-    --clr-blå: #F3F6FF
+    --clr-primary: #6366F1;
+    --clr-gradient:#6366F1 0%, #8B5CF6 50%, #D946EF 100% ;
+    --clr-error:#EF4444;
+    --clr-success:#22C55E;
+    --clr-warning:#FFBA08;
+    --clr-brandbtn:#6366F1;
+    --clr-secondary:#EFF2FC;
+    --clr-info:#4C82F7;
+    --clr-grey1:#F3F6FF;
+    --clr-grey2:#EFF2FC;
+    --clr-grey3:#E2E5F1;
+    --clr-grey4:#D4D7E5;
+    --clr-grey5:#B4B7C9;
+    --clr-grey6:#9397AD;
+    --clr-grey7:#565973;
+    --clr-grey8:#33354D;
+    --clr-grey9:#0B0F19;
+
 }
-
-
-
 
 *{
-    padding:0;
-    margin:0;
     box-sizing: border-box;
-    width: 1920;
     
 }
+
+body{
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    font-size: 16px;   
+    margin: 0;
+    padding: 0;
+}
+
 
 .C1{
     height: 876px;
