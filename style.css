@@ -6,7 +6,9 @@
 
 :root {
     --clr-primary: #6366F1;
-    --clr-gradient:rgb(99, 102, 241, 10%) 10%,rgb(218, 70, 239, 5%) 5%, rgb(241, 244, 253, 7%);
+    --clr-gradient:rgb(99, 102, 241, 10%),rgb(218, 70, 239, 5%), rgb(241, 244, 253, 7%);
+    --clr-gradient:rgb(99, 102, 241, 10%),rgb(218, 70, 239, 5%), rgb(241, 244, 253, 7%);
+
     --clr-error:#EF4444;
     --clr-success:#22C55E;
     --clr-warning:#FFBA08;
@@ -32,7 +34,7 @@
 
 *{
     box-sizing: border-box;
-    -webkit-tap-highlight-color: (0, 0, 0, 0);
+    
     
 }
 
@@ -44,7 +46,10 @@ body{
     font-size: 16px;   
     margin: 0;
     padding: 0;
-    
+}
+
+button:hover{
+ cursor:pointer;
 }
 
 /* FÖLJANDE KOD SNODD FRÅN https://www.w3schools.com/howto/howto_css_switch.asp */
@@ -54,18 +59,14 @@ body{
     display: inline-block;
     width: 60px;
     height: 34px;
-    
-  
   }
   
- 
   .switch input {
     opacity: 0;
     width: 0;
     height: 0;
   }
   
-
 .slider {
     position: absolute;
     cursor: pointer;
@@ -115,17 +116,15 @@ input:checked + .slider:before {
 
   /* HÄR SLUTAR SNODD KOD */
 
-.C1-1 {
+.c1 {
   padding-right:1rem;
   padding-left:1rem;
   display:grid;
-  width: 100%;
+  
   grid-template-columns: 1fr auto auto;
   align-items: center;
   gap: 1rem;
-  margin: auto;
   margin-top: 0.65rem;
-
 }
  
 .signin{
@@ -155,11 +154,13 @@ background-color: var(--clr-info);
 .burgerknapp{
     border: none;
     background-color: transparent;
+    padding-right: 2rem;
    
   }
 
-.tdm {
-    display: none;
+.dml {
+      display: none;
+ 
   }
 
 .c2 {
@@ -167,6 +168,10 @@ background-color: var(--clr-info);
   text-align: center;
   align-items: center;
   
+}
+
+.phone1{
+  display:none;
 }
 .moneytext {
   font-size: 34.1px;
@@ -195,51 +200,41 @@ background-color: var(--clr-info);
   margin-top: 2rem;
 }
 
+.playbtn {
+  margin-top:1rem;
+}
+
+.storebtn{
+border: none;
+border-radius: .5em;
+background-color: transparent;
+}
+
 .astore{
 border: none;
-border-radius: 6px;
+border-radius: .5em;
 background-color: transparent;
-
+}
+.playbtn{
+border: none;
+border-radius: .5em;
+background-color: transparent;
 }
 
-.gplay{ 
-  background-color: transparent;
-  border: none;
-  border-radius: 6px;
-  align-items: center;
-  
-
-}
 .astore:hover{
 background-color: none;
 cursor: pointer;
 }
 
-.gplay:hover{ 
-background-color: transparent;
-cursor: pointer;
-}
-
-.pil{
-  display: inline-block;
-  background-color: transparent;
-  border:none;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  padding:1rem;
-  color: var(--clr-font2);
-  font-weight: 400;
-}
  .pilcont{
-  display:grid;
-
-  grid-template-columns:1fr auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  margin-left: 100px;
   text-align: center;
-  margin-right: 100px;
-  font-family: 14px;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-bottom: 2rem;
  }
 
 textarea{
@@ -247,6 +242,11 @@ textarea{
   resize: none;
   width: 200px;
 
+}
+
+.logotyp
+{
+  display: none;
 }
 
 .c31 {
@@ -302,6 +302,9 @@ font-size: 16px;
 .c4 {
   background-color: var(--clr-grey1);
   text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  
 }
 
 .telebild{
@@ -321,6 +324,8 @@ font-size: 16px;
     font-size: 21.6px;
     color: var(--clr-font1);
     font-weight: 800;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
   p{
@@ -331,19 +336,23 @@ font-size: 16px;
 }
 
 .c5{
-  
   margin:1rem;
-  
+  p{
+    font-size: 18px;
+    color: var(--clr-font2);
+    text-align: center;
+  }
 }
 
 .faq1{
-  border: 1px solid #E2E5F1;;
+  /* border: 1px solid #E2E5F1;; */
+  border-bottom: 1px solid #e2e5f1;
   label{
     font-size: 16px;
     font-weight: 600 ;
     color:#131022;
     padding:0.5rem;}
-    
+   
   
   p{
 
@@ -355,8 +364,7 @@ font-size: 16px;
 }
 
 .faq1b{
-  border: 1px solid #E2E5F1;
-  display:grid;
+  border-bottom: 1px solid #e2e5f1;  display:grid;
   grid-template-columns: 1fr auto;
   place-items: center;
 }
@@ -369,8 +377,7 @@ font-size: 16px;
   
 }
 .faq2{
-  border: 1px solid #E2E5F1;
-  display:grid;
+  border-bottom: 1px solid #e2e5f1;  display:grid;
   grid-template-columns: 1fr auto;
   padding:0.5rem;
   label{
@@ -382,8 +389,7 @@ font-size: 16px;
   
 }
 .faq3{
-  border: 1px solid #E2E5F1;
-  display:grid;
+  border-bottom: 1px solid #e2e5f1;  display:grid;
   grid-template-columns: 1fr auto;
   padding:0.5rem;
   label{
@@ -394,8 +400,7 @@ font-size: 16px;
   }
 }
 .faq4{
-  border: 1px solid #E2E5F1;
-  display:grid;
+  border-bottom: 1px solid #e2e5f1;  display:grid;
   grid-template-columns: 1fr auto;
   padding:0.5rem;
   label{
@@ -406,8 +411,7 @@ font-size: 16px;
   }
 }
 .faq5{
-  border: 1px solid #E2E5F1;
-  display:grid;
+  border-bottom: 1px solid #e2e5f1;  display:grid;
   grid-template-columns: 1fr auto;
   padding:0.5rem;
   label{
@@ -418,10 +422,10 @@ font-size: 16px;
   }
 }
 .faq6{
-  border: 1px solid #E2E5F1;
   display:grid;
   grid-template-columns: 1fr auto;
   padding:0.5rem;
+  
   label{
     font-size: 16px;
     font-weight: 600 ;
@@ -429,10 +433,40 @@ font-size: 16px;
     padding-left: 1rem;
   }
 }
-
-.subkort{
-  background-color: #f3f6ff;
+.faqborder{
+  border: 1px solid #E2E5F1;
+  border-radius: 0.5rem;
 }
+
+.c6{
+  background-color: #f3f6ff;
+  margin: 1em;
+  border-radius: 0.5em;
+  
+}
+.subkort{
+  
+  display:flex;
+  margin: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  label{
+    font-size: 21.6px;
+    font-weight: 800;
+    color: var(--clr-font1);
+    margin-left: 2rem;
+  }
+}
+
+.textbox-sub{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  padding-bottom: 36px;
+}
+
 
 .contactbtn-con{
   display:flex;
@@ -453,4 +487,139 @@ font-size: 16px;
   place-content: center;
 }
   
+.fotnot{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 2rem;
+  p{
+    margin: 0.2rem;
+    color: var(--clr-grey6);
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
 
+@media (width > 759px){
+
+  .dml{
+    display: flex;
+  }
+  
+  .tdm{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap:.5rem;
+  }
+ .c1{
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+ }
+
+ .c2{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  }
+  
+  h1{
+    display:inline-block;
+    text-align: center;
+    font-size: 44.3px;
+    grid-column: 1 / 2;
+}
+
+#c21{
+  grid-column: 1 / 3;
+  display: inline-block
+}
+#c22{
+  display:inline-block;
+  grid-row: 2;
+}
+#c23{
+  display:inline-block;
+  grid-row: 3;
+  flex-direction: column;
+  
+
+}
+#c24
+{
+  grid-row: 4;
+  display:flex;
+
+}
+#c25{
+  grid-row: 2 /5;
+  display: flex;
+}
+
+.logotyp{
+  display:flex;
+  gap: .5rem;
+  padding: 1rem;
+  
+  align-items: center;
+  justify-content: center;
+
+
+  #logo5{
+    display: none;
+  }
+  #logo6{
+    display:none;
+  }
+
+
+}
+/* .c3-2{
+  display:grid;
+  grid-template-columns: 1fr, auto;
+  grid-template-rows: 1fr, auto, auto;
+
+  #kort1{
+    grid-column: 1;
+  }
+  #kort2{grid-column: 2;}
+  #kort3{}
+  #kort4{}
+  #kort5{}
+  #kort6{}
+
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+@media (width > 1299px){
+  .c1{
+    display:none
+  }
+}
