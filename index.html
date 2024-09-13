@@ -3,18 +3,15 @@
 <head>
     <meta charset="UTF-8" />
     <title>title</title>
-     <!-- Google Fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
-     <!-- Google fonts  -->
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta charset="UTF-8">
-     <meta name="descripton" content="denna sida är ett skolarbete detta är bara hjälptext">
-     <title>Burgare</title>
-     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="descripton" content="denna sida är ett skolarbete detta är bara hjälptext">
+    <title>Burgare</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+   <div class="container">
+   <div class="c1-2bg">
     <div class="c1"> 
             <a class="logo" href="index.html"><img src="img/bg/logo1.svg" alt="sili logo"></a>  
             <nav class="feat">
@@ -51,6 +48,7 @@
         </div>
         <img id="c25" class="phone1" src="img/Bg/tabletphone.svg" alt="img of phone">
     </div>
+   </div>
     <div class="c3">
         <div class="logotyp">
             <img id="logo1" src="img/Bg/logo.svg" alt="logo1">
@@ -58,14 +56,15 @@
             <img id="logo3" src="img/Bg/logo3.svg" alt="logo3">
             <img id="logo4" src="img/Bg/logo4.svg" alt="logo4">
             <img id="logo5" src="img/Bg/logo5.svg" alt="logo5">
-            <img id="logo6" src="img/Bg/logo6.svg" alt="logo6">
+            <img id="logo6" src="img/Bg/logo62.svg" alt="logo6">
         </div>
-        <div class="c31">
+       <div class="c3grid"> 
+            <div class="creditphone"><img src="img/Bg/phone2.svg" alt=""></div>
+            <div class="c31">
             <h1>App Features</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum asperiores similique at molestias eos sequi hic, cupiditate minima quam quaerat cumque? Fuga, quasi non. Eos!</p>
-        </div>
-
-        <div class="c3-2">
+            </div>
+            <div class="c3-2">
             <div id="kort1" class="kort1">
                 <img class="kortico" src="img/Bg/kortbild.svg" alt="kort">
                 <h1 class="korth1">Easy paypments</h1>
@@ -96,18 +95,68 @@
                 <h1 class="korth1">Top Standards</h1>
                 <p class="kortp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, ipsa?</p>
             </div>
+            </div>
         </div>
     </div>
     <div class="c4">
         <div class="telebild2">
             <h1>How Does It Work?</h1>
-            <img src="img/Bg/Imageiphone.svg" alt="">
+            <div class="imgshowrow">
+                <img id="img-phone" src="img/Bg/Imageiphone.svg" alt="">
+                <img id="img-desktop" src="img/Bg/3phone1.svg" alt="">
+            </div>
         </div>
         <div class="bottele">
-            <h1>Transfers to people from your contact list</h1>
+            <h1 id="h1phone">Transfers to people from your contact list</h1>
+            <h1 id="h1desktop">Latest transaction history</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus modi reprehenderit debitis. Animi pariatur minima sunt sint.</p>
         </div>
     </div>
+   
+    
+    <div class="desktop-review">
+        <div class="desktop-grid-1">
+            <div class="desk-grid-card">
+                <h1>Make your money transfer simple and clear</h1>
+                <ul>
+                    <li>banking transactions are free for you</li>
+                    <li>No montly cash commission</li>
+                    <li>Manage payments and tranactions online</li>
+                </ul>
+                <button class="learnbtn">Learn More<img src="img/Bg/pilright.svg" alt=""></button>
+            </div>
+            <img src="img/Bg/stapel1.svg" alt="stapel1">
+        </div>
+        
+        <div class="desktop-grid-2">
+            <img src="img/Bg/stapel2.svg" alt="stapel2">
+            <div class="desk-grid-card2">
+                <h1>Recive payment from interneational bank details</h1>
+                <div id="grid-card1" class="kort1">
+                    <img class="kortico" src="img/Bg/kortbild.svg" alt="kort">
+                    <p class="kortp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, ipsa?</p>
+                </div>
+                <div id="grid-card2" class="kort1">
+                    <img class="kortico" src="img/Bg/plonkbild.svg" alt="kort">
+                    <p class="kortp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, ipsa?</p>
+                </div>
+                <button class="learnbtn">Learn more <img src="img/Bg/pilright.svg" alt=""></button>
+            </div>
+        </div>
+        
+        <div class="Soc-med-review">
+            <h1>Clients are loving our app</h1>
+            <img src="img/Bg/review1.svg" alt="Rewview1">
+            <img src="img/Bg/review2.svg" alt="Review2">
+        </div>
+    
+    </div>
+    
+    
+    
+    
+    
+    
     <div class="c5">
         <div class="c4-1">
             <h1>Any Questions? Check out the FAQs</h1>
@@ -131,8 +180,8 @@
             </button>
         </div>
         <div class="faq3"> 
-            <label for="faqbtrv">can i schedule future transfers?</label>
-            <button class="faqbtrv">
+            <label for="faqbt3">can i schedule future transfers?</label>
+            <button id="faqbt3" class="faqbtrv">
                 <img src="img/Bg/pilner.svg" alt="pilner">
             </button>
         </div>
@@ -174,5 +223,6 @@
             <p>©  2024 Silicon. All rights Reserved. </p>
             <p>Credit madrasThemes</p>
     </div>
+</div> 
 </body>
 </html>
