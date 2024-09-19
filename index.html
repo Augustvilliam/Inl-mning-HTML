@@ -112,9 +112,10 @@
             </div>
         </div>
         <div class="bottele">
-            <h1 id="h1phone">Transfers to people from your contact list</h1>
-            <h1 id="h1desktop">Latest transaction history</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima odio unde quas nobis minus nihil et tenetur iste voluptatum dolorum?</p>
+            <h1 class="phone-only">Transfer to people from your contact list</h1>
+            <h1 class="tablet-only">Step 3: Transfer to people from your contact list</h1>
+            <h1 class="desktop-only">Latest transaction History</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi deserunt consequatur cum nulla necessitatibus sed doloremque distinctio placeat hic illum.</p>
         </div>
         </div>
     </div>
@@ -218,12 +219,14 @@
     <div class="c6 container">
         <div class="subkort">
             <img class="notispic" src="img/Bg/notisbtn.svg" alt="bild på kolcka">
-            <label class="label-phone">Subscribe to our newsletter</label>
-            <label class="label-desk">Subscribe to our newsletter to stay informed about latest updates</label>
+            <p class="label-phone">Subscribe to our newsletter</p>
+            <p class="label-desk">Subscribe to our newsletter to stay informed about latest updates</p>
         </div>
         <div class="textbox-sub">
-            <textarea name="Your-Email" id="textarea">Your email</textarea>
-            <label for="textarea"><button class="contactbtn1">Subscribe</button></label>
+            <form class="Subscirbe-form" action="#" method="get">
+                <input type="email" class="form-input" id="email" name="email" required placeholder="Your email">
+                <button class="email-subscribe">Subscirbe</button>
+            </form>
         </div>
     </div>
     <div class="fotnot container">

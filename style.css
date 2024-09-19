@@ -52,6 +52,9 @@ button:hover{
 }
 .container{
   max-width: 720px;
+  @media(width > 576px){
+    max-width: 540px;
+  }
 }
 /* FÖLJANDE KOD SNODD FRÅN https://www.w3schools.com/howto/howto_css_switch.asp */
 
@@ -286,6 +289,7 @@ textarea{
 .c3-2{
   width: 90%;
   margin: 0 auto;
+  padding-bottom:2rem;
 }
 
 .kort1 {
@@ -322,7 +326,6 @@ font-size: 16px;
   display:none;
 }
 
-
 .c4 {
   background-color: var(--clr-grey1);
   text-align: center;
@@ -345,8 +348,13 @@ font-size: 16px;
   }
   #img-desktop{
     display:none;
-  }
-  
+  }  
+}
+.tablet-only{
+  display:none;
+}
+.desktop-only{
+  display:none;
 }
 
 .telebild{
@@ -356,7 +364,12 @@ font-size: 16px;
     font-size: 27.9px;
     color: var(--clr-font1);
     font-weight: 800;
+    padding-bottom:2rem;
   }
+
+}
+.imgshowrow{
+  padding-top:2rem;
 }
 #img-tablet{
   display:none;
@@ -414,6 +427,7 @@ font-size: 16px;
 
 .c5{
   padding: .5rem;
+  padding-top:2rem;
   p{
     font-size: 18px;
     color: var(--clr-font2);
@@ -421,6 +435,7 @@ font-size: 16px;
   }
   h1{
     text-align: center;
+    padding-bottom:2rem;
   }
   .contact-box{
     display:none;
@@ -537,47 +552,64 @@ font-size: 16px;
 .faqborder{
   border: 1px solid #E2E5F1;
   border-radius: 0.5rem;
+  p{
+  text-align: start;
+  margin-left:0;
+}  
 }
 
 .c6{
   background-color: #f3f6ff;
   border-radius: 0.5em;
+  margin-bottom:2rem;
+
   
 }
 .label-desk{
   display:none;
 }
+.label-phone{
+  font-size:21.6px;
+  font-weight: 900;
+  padding-left:1rem;
+}
 .subkort{
-  
   display:flex;
-  margin: 0.5rem;
+  padding-left:3rem;
+  margin-right:6rem;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  label{
-    font-size: 21.6px;
-    font-weight: 800;
-    color: var(--clr-font1);
-    margin-left: 2rem;
-  }
+}   
+.Subscirbe-form{
+  display:flex;
+  padding-top:2rem;
+  
+}
+.email-subscribe{
+    background-color: var(--clr-primary);
+    align-items: center;
+    text-align: center;
+    color: var(--clr-grey1);
+    border-radius: 0rem .5rem .5rem 0rem;
+    text-decoration: none;
+    padding: 12px 25px;
+    border:none;
+    place-content: center;
+}
+.form-input{
+  border-radius: .5rem 0 0 .5rem;
+  border:1px solid #e2e5f1;
+  padding-left:1rem;
+  width: 219px;
+  height: 51px;
 }
 
 .textbox-sub{
   display:flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 3rem;
   padding-bottom: 3rem;
-  padding-top: 3rem;
   gap:0;
-  margin:0 0;
-  label{
-    margin:0 0;
-  }
-  #textarea{
-    margin: 0 0;
-    height:40px;
-  }
+  width: 100%;
 }
 .contact-box{
   border:1px solid var(--clr-grey2);
@@ -593,7 +625,6 @@ font-size: 16px;
 }
 .contactbtn{
   background-color: var(--clr-primary);
-  display:flex;
   align-items: center;
   text-align: center;
   color: var(--clr-grey1);
@@ -603,25 +634,16 @@ font-size: 16px;
   border:none;
   place-content: center;
 }
-.contactbtn1{
-  background-color: var(--clr-primary);
-  display:flex;
-  align-items: center;
-  text-align: center;
-  color: var(--clr-grey1);
-  border-radius: 0px 8px 8px 0px;
-  text-decoration: none;
-  padding: 12px 25px;
-  border:none;
-  place-content: center;
-}
-  
+
 .fotnot{
   display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding-bottom: 4rem;
+  
+  
  
   p{
     margin: 0.2rem;
@@ -631,7 +653,9 @@ font-size: 16px;
   }
 }
 
+
 @media (width > 768px){
+  .tablet-only{display:block}
  .container{ 
   max-width:720px;
   }
@@ -742,13 +766,18 @@ font-size: 16px;
         display:none;
       }
     }
+    .c31{
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
 
 
     .c3-2{
       display:grid;
-      padding-bottom: 2rem;
+      padding-bottom: 5rem;
       gap:1rem;
       grid-template-columns: 1fr 1fr;
+
     }
   }
   .imgshowrow{
@@ -762,6 +791,13 @@ font-size: 16px;
     #img-tablet{
       display:block;
     }
+
+  }
+  .tablet-only{
+    display:block;
+  }
+  .phone-only{
+    display:none;
   }
   .c5{
     .c4-1{
@@ -796,10 +832,6 @@ font-size: 16px;
     display:flex;
     padding:2rem;
     gap:2rem;
-    .subkort{
-      max-width: 300px;
-      
-    }
     .textbox-sub{
       margin-left:0;
     }
@@ -809,8 +841,6 @@ font-size: 16px;
     padding-bottom:2rem;
   }
 }
-
-
 
 @media (width > 1400px){
   .container{ 
@@ -954,6 +984,17 @@ font-size: 16px;
     }
     #img-tablet{
       display:none;
+    }
+    .desktop-only{
+      display:block;
+    }
+    .tablet-only{
+      display:none;
+    }
+    .bottele{
+      margin-left:14rem;
+      margin-right:10rem;
+      padding-bottom: 4rem;
     }
   
   
@@ -1137,26 +1178,6 @@ font-size: 16px;
       }
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   }
   .c6{
     display: grid;
@@ -1164,15 +1185,24 @@ font-size: 16px;
     gap:5rem;
     margin-top:5rem;
     padding:5rem;
+    .subkort{
+      margin:0;
+      padding:0;
+    }
   }
   .label-phone{
     display:none
   }
   .label-desk{
-    display:block
+    display:block;
+    margin: 0.2rem;
+    color: var(--clr-grey9);
+    font-weight: 800;
+    font-size: 24px;
   }
   .fotnot{
-    padding: 3rem;
+    padding-top: 3rem;
+    
   }
 
 
