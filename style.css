@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
-
-
-
-
 :root {
     --clr-primary: #6366F1;
     --clr-gradient:rgb(99, 102, 241, 10%),rgb(218, 70, 239, 5%), rgb(241, 244, 253, 7%);
@@ -118,7 +114,7 @@ input:checked + .slider:before {
     border-radius: 50%;
   } 
 
-  /* HÄR SLUTAR SNODD KOD */
+/* HÄR SLUTAR SNODD KOD */
 .c1-2bg{
   background-image: linear-gradient(to top, rgba(99, 102, 241, 10%), rgba(218, 70, 239, 5%), rgba(241, 244, 253, 7%));
 }
@@ -169,12 +165,12 @@ background-color: var(--clr-info);
     background-color: transparent;
     padding-right: .5rem;
    
-  }
+}
 
 .dml {
       display: none;
  
-  }
+}
 
 .c2 {
   text-align: center;
@@ -827,15 +823,17 @@ font-size: 16px;
     }
     
   }
-
   .c6{
     display:flex;
     padding:2rem;
     gap:2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     .textbox-sub{
-      margin-left:0;
-    }
+      margin-right:2rem;
     
+    }
   }
   .fotnot{
     padding-bottom:2rem;
@@ -869,6 +867,7 @@ font-size: 16px;
       display:block;
       grid-column: 3;
       grid-row:1 / 5;
+      margin-top:30px;
       
     }
     .phone2{
