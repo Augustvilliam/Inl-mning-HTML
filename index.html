@@ -12,7 +12,8 @@
 <body>
     <div class="c1-2bg">
         <div class="c1 container"> 
-            <a class="logo" href="index.html"><img src="img/bg/silicon.svg" alt="sili logo"></a> 
+            <a class="logo darkmode-only" href="index.html"><img src="img/bg/silicon-dark.svg" alt="sili logo"></a> 
+            <a class="logo lightmode-only" href="index.html"><img src="img/bg/silicon.svg" alt="sili logo"></a> 
 
             <nav class="feat">
                 <a href="#">Features</a>
@@ -64,8 +65,11 @@
             </div>
 
             <div class="pilcont">
-            <button class="faqbtrv" id="c24"><img src="img/Bg/pilner.svg" alt=""></button>
-            <label for="c24">Discover more</label>
+                <button class="faqbt-closed">
+                    <img class="lightmode-only" src="img/Bg/pilner.svg" alt="">
+                    <img class="darkmode-only" src="img/Bg/pilner-darkmode.svg" alt="">
+                </button>
+                <label for="c24">Discover more</label>
             </div>
 
             <img id="phone-tablet" class="phone2" src="img/Bg/tabletphone.svg" alt="img of phone">
@@ -91,32 +95,44 @@
             </div>
             <div class="c3-2">
             <div id="kort1" class="kort1">
-                <img class="kortico" src="img/Bg/kortbild.svg" alt="kort">
+                <div class="small-card">
+                    <img class="kortico" src="img/Bg/credit-card.svg" alt="kort">
+                </div>
                 <h1 class="korth1">Easy paypments</h1>
                 <p class="kortp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, ipsa?</p>
             </div>
             <div id="kort2" class="kort1">
-                <img class="kortico"  src="img/Bg/skölbild.svg" alt="sköld">
+                <div class="small-card">
+                    <img class="kortico" src="img/Bg/shield.svg" alt="kort">
+                </div>
                 <h1 class="korth1">Data Security</h1>
                 <p class="kortp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, ipsa?</p>
             </div>
             <div id="kort3" class="kort1">
-                <img class="kortico"  src="img/Bg/stapelbild.svg" alt="stapel">
+                <div class="small-card">
+                    <img class="kortico" src="img/Bg/bars-graphic.svg" alt="kort">
+                </div>
                 <h1 class="korth1">Cost statistics</h1>
                 <p class="kortp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, ipsa?</p>
             </div>
             <div id="kort4" class="kort1">
-                <img class="kortico" src="img/Bg/bubblabild.svg" alt="bubbla">
+                <div class="small-card">
+                    <img class="kortico" src="img/Bg/communication.svg" alt="kort">
+                </div>
                 <h1 class="korth1">Support 24/7</h1>
                 <p class="kortp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, ipsa?</p>
             </div>
             <div id="kort5" class="kort1">
-                <img class="kortico" src="img/Bg/plonkbild.svg" alt="plonk">
+                <div class="small-card">
+                    <img class="kortico" src="img/Bg/wallet.svg" alt="kort">
+                </div>
                 <h1 class="korth1">Regular Cashback</h1>
                 <p class="kortp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, ipsa?</p>
             </div>
             <div id="kort6" class="kort1">
-                <img class="kortico" src="img/Bg/emojibild.svg" alt="emoji">
+                <div class="small-card">
+                    <img class="kortico" src="img/Bg/happy.svg" alt="kort">
+                </div>
                 <h1 class="korth1">Top Standards</h1>
                 <p class="kortp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, ipsa?</p>
             </div>
@@ -164,11 +180,15 @@
             <div class="desk-grid-card2">
                 <h1>Recive payment from interneational bank details</h1>
                 <div id="grid-card1" class="kort1">
-                    <img class="kortico" src="img/Bg/kortbild.svg" alt="kort">
+                    <div class="small-card">
+                        <img class="kortico" src="img/Bg/shield.svg" alt="kort">
+                    </div>
                     <p class="kortp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, ipsa?</p>
                 </div>
                 <div id="grid-card2" class="kort1">
-                    <img class="kortico" src="img/Bg/plonkbild.svg" alt="kort">
+                    <div class="small-card">
+                        <img class="kortico" src="img/Bg/shield.svg" alt="kort">
+                    </div>
                     <p class="kortp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, ipsa?</p>
                 </div>
                 <button class="learnbtn">
@@ -180,8 +200,10 @@
         <div class="bg-primary">
             <div class="Soc-med-review container ">
                 <h1>Clients are loving our app</h1>
-                <img class="review-img" src="img/Bg/review1.svg" alt="Rewview1">
-                <img class="review-img" src="img/Bg/review2.svg" alt="Review2">
+                <img class="review-img lightmode-only" src="img/Bg/review1.svg" alt="Rewview1">
+                <img class="review-img lightmode-only" src="img/Bg/review2.svg" alt="Review2">
+                <img class="review-img-dark darkmode-only" src="img/Bg/review1-dark.svg" alt="Rewview1">
+                <img class="review-img-dark darkmode-only" src="img/Bg/review2-dark.svg" alt="Review2">
             </div>
         </div>
     </div>
@@ -191,69 +213,88 @@
             <h1>Any Questions? Check out the FAQs</h1>
             <p>Still have unanswered questions and need to get in touch?</p>
         </div>
+        
         <div class="faqborder">
-        <div class="faq1 phone-only" > 
-                <div class="faq1b">
-                    <label for="faqbtrv">is any of my personal information stored in the app?</label>
-                    <button class="faqbtrv">
-                        <img src="img/Bg/pilupp.svg" alt="">
-                    </button>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, veniam corporis voluptates consequuntur quasi aut iste voluptatibus sint saepe, nobis quam impedit. A quae molestiae assumenda minus autem itaque sint consequuntur dolorum non asperiores reprehenderit commodi, qui labore vel voluptatum consectetur temporibus in magnam. Autem ut quia voluptate quisquam velit!</p>
-        </div>
-        <div id="faq4" class="faq4 desktop-only tablet-only"> 
-            <label for="faqbtrv">is any of my personal information stored in the app?</label>
-            <button class="faqbtrv">
-                <img src="img/Bg/pilner.svg" alt="pilner">
-            </button>
-        </div>
-        <div class="faq2"> 
-            <label for="faqbtrv">what format can i downlod my transaction history in??</label>
-            <button class="faqbtrv">
-                <img src="img/Bg/pilner.svg" alt="pilner">
-            </button>
-        </div>
-        <div class="faq3 phone-only"> 
-            <label for="faqbtrv">can i schedule future transfers?</label>
-            <button class="faqbtrv">
-                <img src="img/Bg/pilner.svg" alt="pilner">
-            </button>
-        </div>
-        <div class="faq1 desktop-only tablet-only "> 
+
+            <div id="faq1" class="faq-expanded phone-only" > 
             <div class="faq1b">
-                <label for="faqbtrv">can i schedule future transfers?</label>
-                <button class="faqbtrv">
+                <label>is any of my personal information stored in the app?</label>
+                <button class="faqbt-expanded">
+                    <img src="img/Bg/pilupp.svg" alt="Arrow pointing up">
+                </button>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, veniam corporis voluptates consequuntur quasi aut iste voluptatibus sint saepe, nobis quam impedit. A quae molestiae assumenda minus autem itaque sint consequuntur dolorum non asperiores reprehenderit commodi, qui labore vel voluptatum consectetur temporibus in magnam. Autem ut quia voluptate quisquam velit!</p>
+            </div>
+
+            <div id="faq2" class="faq-close desktop-only tablet-only"> 
+            <label>is any of my personal information stored in the app?</label>
+            <button class="faqbt-closed">
+                <img class="lightmode-only" src="img/Bg/pilner.svg" alt="pilner">
+                <img class="darkmode-only" src="img/Bg/pilner-darkmode.svg" alt="pilner">
+            </button>
+            </div>
+
+            <div id="faq3" class="faq-close"> 
+            <label>what format can i downlod my transaction history in??</label>
+            <button class="faqbt-closed">
+                <img class="lightmode-only" src="img/Bg/pilner.svg" alt="pilner">
+                <img class="darkmode-only" src="img/Bg/pilner-darkmode.svg" alt="pilner">
+            </button>
+            </div>
+
+            <div id="faq4"  class="faq-close phone-only"> 
+            <label>can i schedule future transfers?</label>
+            <button class="faqbt-closed">
+                <img class="lightmode-only" src="img/Bg/pilner.svg" alt="pilner">
+                <img class="darkmode-only" src="img/Bg/pilner-darkmode.svg" alt="pilner">
+            </button>
+            </div>
+
+            <div id="faq5"  class=" desktop-only tablet-only faq-expanded"> 
+            <div class="faq1b">
+                <label>can i schedule future transfers?</label>
+                <button class="faqbt-expanded">
                     <img src="img/Bg/pilupp.svg" alt="">
                 </button>
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, veniam corporis voluptates consequuntur quasi aut iste voluptatibus sint saepe, nobis quam impedit. A quae molestiae assumenda minus autem itaque sint consequuntur dolorum non asperiores reprehenderit commodi, qui labore vel voluptatum consectetur temporibus in magnam. Autem ut quia voluptate quisquam velit!</p>
-        </div>
-        <div class="faq4"> 
-            <label for="faqbtrv">When can i use Banking App Service?</label>
-            <button class="faqbtrv">
-                <img src="img/Bg/pilner.svg" alt="pilner">
+            </div>
+
+            <div id="faq6" class="faq-close"> 
+            <label>When can i use Banking App Service?</label>
+            <button class="faqbt-closed">
+                <img class="lightmode-only" src="img/Bg/pilner.svg" alt="pilner">
+                <img class="darkmode-only" src="img/Bg/pilner-darkmode.svg" alt="pilner">
             </button>
-        </div>
-        <div class="faq5"> 
-            <label for="faqbtrv">Can i create my own password that is easy for me to remember?</label>
-            <button class="faqbtrv">
-                <img src="img/Bg/pilner.svg" alt="pilner">
+            </div>
+
+            <div id="faq7" class="faq-close"> 
+            <label>Can i create my own password that is easy for me to remember?</label>
+            <button class="faqbt-closed">
+                <img class="lightmode-only" src="img/Bg/pilner.svg" alt="pilner">
+                <img class="darkmode-only" src="img/Bg/pilner-darkmode.svg" alt="pilner">
             </button>
-        </div>
-        <div class="faq6"> 
-            <label for="faqbtrv">What happens if i forget or lose my password?</label>
-            <button class="faqbtrv">
-                <img src="img/Bg/pilner.svg" alt="pilner">
+            </div>
+
+            <div id="faq8" class="faq-close"> 
+            <label>What happens if i forget or lose my password?</label>
+            <button class="faqbt-closed">
+                <img class="lightmode-only" src="img/Bg/pilner.svg" alt="pilner">
+                <img class="darkmode-only" src="img/Bg/pilner-darkmode.svg" alt="pilner">
             </button>
+            </div>
+
         </div>
-        </div>
+        
         <div class="container-cont-box">
             <button class="contact-box"><img src="img/Bg/phonebox1.svg" alt=""></button>
             <button class="contact-box"><img src="img/Bg/chatbox.svg" alt=""></button>
         </div>
+
         <div class="contactbtn-con">
             <button class="contactbtn">Contact us now</button>
         </div>
+
     </div>
 
     <div class="c6 container">
