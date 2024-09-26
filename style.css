@@ -994,7 +994,7 @@ font-size: 16px;
   .tablet-only{
     display:block}
  .container{ 
-  max: width 960px;px;
+  max-width: 960px;
   }
 }
 @media (width > 1200px){
