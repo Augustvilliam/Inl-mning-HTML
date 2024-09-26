@@ -25,6 +25,9 @@
     --clr-card-bg: hsla(239, 84%, 67%, 0.08);
     --clr-btn-bg:#F3F6FF;
     --clr-border:#E2E5F1;
+    --clr-btn-text:#FFFFFF;
+    --clr-header:#0B0F19;
+    --clr-text: #33354d;
 }
 
 *{
@@ -57,6 +60,7 @@ button:hover{
 }
 html{
   color-scheme: light;
+
 }
 h1{
   color: var(--clr-font-h);
@@ -71,12 +75,16 @@ h1{
   --clr-btn-text:#f3f6ff;
   --clr-btn-bg:hsla(0, 0%, 100%, 0.05);
   --clr-border:hsla(0, 0%, 100%, 0.15);
-
+  --clr-btn-text:#FFFFFF;
+  --clr-header:#FFFFFF;
+  --clr-bg: hsla(0, 0%, 100%, 0.04);
+  --clr-text: #FFFFFF;
   .darkmode-only{
-    display:block
+    display:block;
   }
   .lightmode-only{
     display:none;
+    
   }
   .review-img-dark{
     margin-right:1.5rem;
@@ -154,7 +162,7 @@ input:checked + .slider:before {
   border: 1px solid var(--clr-grey8);
   background-color:var(--clr-font-head);
   border-radius: .5rem;
-  width: 100%;
+  width: 90%;
   padding:.5rem;
 }
 
@@ -198,7 +206,7 @@ input:checked + .slider:before {
 }
 
 .bg-primary{
-  background-color: var(--clr-grey1);
+  background-color: var(--clr-bg);
   width: 100%;
 }
 .c1 {
@@ -207,15 +215,16 @@ input:checked + .slider:before {
   justify-content: center;
   align-items: center;
   gap:1rem;
+  padding-top:1rem;
 ;
 }
 .logo{
-  margin: 1rem;
+  margin-left: 0.5rem;
 }
 .signin{
     background-color: var(--clr-primary);
     text-align: center;
-    color: var(--clr-grey1);
+    color: var(--clr-btn-text);
     justify-content: center;
     display:flex;
     border-radius: 8px;
@@ -224,6 +233,7 @@ input:checked + .slider:before {
     padding: 12px 25px;
     display: none;
     gap:.5rem;
+    margin-right: .5rem;
   }
 .signin:hover {
 background-color: var(--clr-info);
@@ -231,8 +241,10 @@ background-color: var(--clr-info);
 }
 .feat {
     display: none;
+    text-decoration: none;
     a{
       text-decoration: none;
+      color: var(--clr-text);
     }
   }
 .phone2{
@@ -379,6 +391,8 @@ textarea{
   background-color: var(--clr-card-bg) ;
   padding:1rem;
   border-radius: .5rem;
+  width: 60px;
+  height: 60px;
 }
 .korth1{
 grid-column: 2;
@@ -403,7 +417,7 @@ font-size: 16px;
 }
 
 .c4 {
-  background-color: var(--clr-grey1);
+  
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -597,11 +611,17 @@ font-size: 16px;
     display:none;
   }
 }
-
 #faq3{
   @media (width > 768px){
     display:none;
   }
+}
+#faq8{
+  border:none;
+}
+.faq1b{
+  padding-top: .5rem;
+  padding-bottom: .5rem;
 }
 
 
@@ -627,6 +647,9 @@ font-size: 16px;
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  .label-desk{
+    color:var(--clr-header);
+  }
 }   
 .Subscirbe-form{
   display:flex;
@@ -647,11 +670,14 @@ font-size: 16px;
 .form-input{
   border-radius: .5rem 0 0 .5rem;
   border:1px solid #e2e5f1;
-  padding-left:1rem;
+  padding-left:2rem;
   width: 219px;
   height: 51px;
   background-color: #ffffff;
   color: var(--clr-grey5);
+  background-image: url(img/Bg/Email-envelope.svg);
+  background-repeat: no-repeat;
+  background-position: 10px;
 }
 
 .textbox-sub{
@@ -787,12 +813,7 @@ font-size: 16px;
       grid-column: 2;
       grid-row:2 / 5;
     }
-    .storebtn{
-    max-width: 125px;
-    max-height: 41px;
-    overflow: hidden;
-        
-    }
+
       
     h1{
       grid-column: 1 /3;
@@ -838,6 +859,9 @@ font-size: 16px;
     }
 
   }
+
+
+
   .c3{
     .logotyp{
       display:flex;
@@ -914,31 +938,37 @@ font-size: 16px;
     
       
     }
+    #faq3{
+      display:grid;
+    }
+    #faq2{
+      display:grid;
+      margin-bottom: 1rem;
+      text-align: start;
+      align-items: center;
+      justify-content: center;
+    }
+    #faq8{
+      border:1px solid var(--clr-border)
+    }
     .faqborder{
-      .faq{
-        border-bottom: 1px solid #e2e5f1;  
-        display:grid;
-        grid-template-columns: 1fr auto;
-        padding:0.5rem;
-        align-items: center;
-        label{
-          font-size: 16px;
-          font-weight: 600 ;
-          color:var(--clr-font-h);
-          padding-left: 1rem;
-          margin:0;
-        }
-      }
-    #faq4{display: grid;
+      border:none;
     }
-    .faq1{
-      padding-left:.5rem;
-
-      }
+    .faq-close{
+      border:1px solid var(--clr-border);
+      border-radius: .5rem;
+      margin-bottom: 1rem;
+      align-items: center;
     }
-
-
-
+    .faq-expanded{
+      border:1px solid var(--clr-border);
+      border-radius: .5rem;
+      margin-bottom: 1rem;
+    }
+    .faq1b{
+      border:none;
+      padding: .5rem;
+    }
     
   }
   .c6{
@@ -960,7 +990,20 @@ font-size: 16px;
     display:grid;
   }
 }
-
+@media (width > 992px){
+  .tablet-only{
+    display:block}
+ .container{ 
+  max: width 960px;px;
+  }
+}
+@media (width > 1200px){
+  .tablet-only{
+    display:block}
+ .container{ 
+  max-width:1140px;
+  }
+}
 @media (width > 1400px){
   .container{ 
     max-width: 1320px;}
@@ -1144,9 +1187,10 @@ font-size: 16px;
         padding-bottom: 5rem;
       }
       .Soc-med-review{
-        background-color: var(--clr-grey1);        
+        
         display:flex;
         padding-top:5rem;
+        padding-bottom:5rem;
         h1{
           font-size:40px;
           font-weight: 800;
@@ -1224,6 +1268,7 @@ font-size: 16px;
           }
           .small-card{
             margin:0;
+
 
           }
         }
