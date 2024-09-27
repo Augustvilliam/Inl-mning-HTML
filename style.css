@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 :root {
+
     --clr-primary: #6366F1;
     --clr-gradient: linear-gradient(to top, rgba(99, 102, 241, 10%), rgba(218, 70, 239, 5%), rgba(241, 244, 253, 7%));
     --clr-brandbtn:#6366F1;
@@ -28,6 +29,7 @@
     --clr-btn-text:#FFFFFF;
     --clr-header:#0B0F19;
     --clr-text: #33354d;
+    --clr-shadow:rgba(0, 0, 0, 0.2)
 }
 
 *{
@@ -39,6 +41,7 @@
 }
 
 body{
+  
     font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -53,11 +56,13 @@ button:hover{
  cursor:pointer;
 }
 .container{
+
   max-width: 720px;
   @media(width > 576px){
     max-width: 540px;
   }
 }
+
 html{
   color-scheme: light;
 
@@ -78,6 +83,7 @@ h1{
   --clr-btn-text:#FFFFFF;
   --clr-header:#FFFFFF;
   --clr-bg: hsla(0, 0%, 100%, 0.04);
+  --clr-shadow:hsla(0, 0%, 100%, 0.05);
   --clr-text: #FFFFFF;
   .darkmode-only{
     display:block;
@@ -216,10 +222,11 @@ input:checked + .slider:before {
   align-items: center;
   gap:1rem;
   padding-top:1rem;
-;
+
 }
 .logo{
   margin-left: 0.5rem;
+  padding-top: .16rem;
 }
 .signin{
     background-color: var(--clr-primary);
@@ -335,6 +342,9 @@ cursor: pointer;
   justify-content: center;
   align-items: center;
   gap: .5rem;
+  button{
+    box-shadow: 0 4px 8px 0 var(--clr-shadow);
+  }
 }
 
 textarea{
@@ -350,8 +360,10 @@ textarea{
   gap:1rem;
 }
 .logo-border{
-  border: 1px solid var(--clr-grey3);
+  border: 1px solid var(--clr-border);
   border-radius: .5rem;
+  box-shadow: 0 4px 8px 0 var(--clr-shadow);
+
 }
 
 .c31 {
@@ -547,6 +559,8 @@ font-size: 16px;
   padding:1rem;
   height: 36px;
   width: 36px;
+  box-shadow: 0 4px 8px 0 var(--clr-shadow);
+
 
 }
 .faqbt-closed{
@@ -687,7 +701,7 @@ font-size: 16px;
   width: 100%;
 }
 .contact-box{
-  border:1px solid var(--clr-grey2);
+  border:1px solid var(--clr-border);
   border-radius: .5rem;
   margin:1rem;
 }
@@ -717,6 +731,7 @@ font-size: 16px;
   padding-bottom: 4rem;
   color: var(--clr-grey6);
   p{
+    
     margin: 0.2rem;
     font-weight: 400;
     font-size: 14px;
@@ -808,8 +823,9 @@ font-size: 16px;
     display:grid;
     padding-top:2rem;    
   .phone2{
-      margin-right: 10px;
-      display:block;
+      align-items: start;
+      padding-left: 0;
+      display:flex;
       grid-column: 2;
       grid-row:2 / 5;
     }
@@ -848,7 +864,10 @@ font-size: 16px;
       grid-row:4;
       
       margin-left:1rem;
-      justify-content: left;
+      justify-content: start;
+      button{margin:0;
+      
+      }
       #c24{
         margin:0;
       }
@@ -982,6 +1001,11 @@ font-size: 16px;
       margin-right:2rem;
     
     }
+    .subkort{
+      text-align: start;
+      margin-right:2rem;
+      padding-left:0;
+    }
   }
   .fotnot{
     padding-bottom:2rem;
@@ -990,20 +1014,7 @@ font-size: 16px;
     display:grid;
   }
 }
-@media (width > 992px){
-  .tablet-only{
-    display:block}
- .container{ 
-  max-width: 960px;
-  }
-}
-@media (width > 1200px){
-  .tablet-only{
-    display:block}
- .container{ 
-  max-width:1140px;
-  }
-}
+
 @media (width > 1400px){
   .container{ 
     max-width: 1320px;}
@@ -1363,6 +1374,8 @@ font-size: 16px;
     color: var(--clr-grey9);
     font-weight: 800;
     font-size: 24px;
+    text-align: start;
+    padding-left:1rem;
   }
   .fotnot{
     padding-top: 3rem;
