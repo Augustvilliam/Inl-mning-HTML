@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    
     <meta charset="UTF-8" />
     <title>Silicon</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="descripton" content="denna sida är ett skolarbete detta är bara hjälptext">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="main.scss">
+    <link rel="stylesheet" href="scss/main.scss">
     <link rel="shortcut icon" href="img/Bg/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -22,25 +23,23 @@
 
             <div class="tdm">
                 <span class="dml">Dark mode</span>
-                <label class="switch">
+                <label for="darkmode-switch" class="switch">
                     <input type="checkbox" id="darkmode-switch">
                     <span class="slider round"></span>
                 </label>
             </div>
 
-            <a class="signin" href="#">
+            <a class="btn-primary btn-hover" href="#">
                 <img src="img/Bg/signin.svg" alt="gubbe">
-            <label>sign in / up</label>
+                <span for="sign-in">sign in / up</span>
             </a>
-
-            <button class="burgerknapp">
-            <img src="img/Bg/burgknapp.svg" alt="burgermeny">
+            <button aria-label="Open menu" class="burgerknapp">
+                <img src="img/Bg/burgknapp.svg" alt="burgermeny">
             </button>
         </div>
 
         <div class="c2 container">
-            <h1 id="c21" class="moneytext h1font">Manage All Your Money in One App</h1>
-            
+            <h1 class="moneytext h1font">Manage All Your Money in One App</h1>
             <span class="breadtext">
             <p>We offer you a new generation of the mobile banking. Save, spend & manage money in your pocket</p>
             </span>
@@ -66,11 +65,11 @@
             </div>
 
             <div class="pilcont">
-                <button class="faqbt-closed">
+                <button aria-label="discover more" id="discover-more" class="faq-bt-closed">
                     <img class="lightmode-only" src="img/Bg/pilner.svg" alt="">
                     <img class="darkmode-only" src="img/Bg/pilner-darkmode.svg" alt="">
                 </button>
-                <label for="c24">Discover more</label>
+                <span for="discover-more">Discover more</span>
             </div>
 
             <img id="phone-tablet" class="phone2" src="img/Bg/tabletphone.svg" alt="img of phone">
@@ -169,7 +168,7 @@
                     <li>No montly cash commission</li>
                     <li>Manage payments and tranactions online</li>
                 </ul>
-                <button class="learnbtn">
+                <button aria-label="learn more" class="btn-primary btn-hover">
                     <p>Learn More</p>
                     <img class="arrow-left" src="img/Bg/pilright.svg" alt="">
                 </button>
@@ -192,7 +191,7 @@
                     </div>
                     <p class="kortp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, ipsa?</p>
                 </div>
-                <button class="learnbtn">
+                <button aria-label="learn more" class="btn-primary btn-hover">
                     <p>Learn more</p> 
                     <img src="img/Bg/pilright.svg" alt="">
                 </button>
@@ -219,8 +218,8 @@
 
             <div id="faq1" class="faq-expanded phone-only" > 
             <div class="faq1b">
-                <label>is any of my personal information stored in the app?</label>
-                <button class="faqbt-expanded">
+                <span>is any of my personal information stored in the app?</span>
+                <button aria-label="Expand" class="faq-bt-expanded">
                     <img src="img/Bg/pilupp.svg" alt="Arrow pointing up">
                 </button>
             </div>
@@ -228,24 +227,24 @@
             </div>
 
             <div id="faq2" class="faq-close desktop-only tablet-only"> 
-            <label>is any of my personal information stored in the app?</label>
-            <button class="faqbt-closed">
-                <img class="lightmode-only" src="img/Bg/pilner.svg" alt="pilner">
-                <img class="darkmode-only" src="img/Bg/pilner-darkmode.svg" alt="pilner">
-            </button>
+                <span>is any of my personal information stored in the app?</span>
+                <button aria-label="" class="faq-bt-closed">
+                    <img class="lightmode-only" src="img/Bg/pilner.svg" alt="pilner">
+                    <img class="darkmode-only" src="img/Bg/pilner-darkmode.svg" alt="pilner">
+                 </button>
             </div>
 
             <div id="faq3" class="faq-close"> 
-            <label>what format can i downlod my transaction history in??</label>
-            <button class="faqbt-closed">
-                <img class="lightmode-only" src="img/Bg/pilner.svg" alt="pilner">
-                <img class="darkmode-only" src="img/Bg/pilner-darkmode.svg" alt="pilner">
-            </button>
+                <span>what format can i downlod my transaction history in??</span>
+                <button aria-label="" class="faq-bt-closed">
+                    <img class="lightmode-only" src="img/Bg/pilner.svg" alt="pilner">
+                    <img class="darkmode-only" src="img/Bg/pilner-darkmode.svg" alt="pilner">
+                </button>
             </div>
 
             <div id="faq4"  class="faq-close phone-only"> 
-            <label>can i schedule future transfers?</label>
-            <button class="faqbt-closed">
+            <span>can i schedule future transfers?</span>
+            <button aria-label="Expand" class="faq-bt-closed">
                 <img class="lightmode-only" src="img/Bg/pilner.svg" alt="pilner">
                 <img class="darkmode-only" src="img/Bg/pilner-darkmode.svg" alt="pilner">
             </button>
@@ -253,8 +252,8 @@
 
             <div id="faq5"  class=" desktop-only tablet-only faq-expanded"> 
             <div class="faq1b">
-                <label>can i schedule future transfers?</label>
-                <button class="faqbt-expanded">
+                <span>can i schedule future transfers?</span>
+                <button aria-label="Expand" class="faq-bt-expanded">
                     <img src="img/Bg/pilupp.svg" alt="">
                 </button>
             </div>
@@ -262,24 +261,24 @@
             </div>
 
             <div id="faq6" class="faq-close"> 
-            <label>When can i use Banking App Service?</label>
-            <button class="faqbt-closed">
+            <span>When can i use Banking App Service?</span>
+            <button aria-label="Expand" class="faq-bt-closed">
                 <img class="lightmode-only" src="img/Bg/pilner.svg" alt="pilner">
                 <img class="darkmode-only" src="img/Bg/pilner-darkmode.svg" alt="pilner">
             </button>
             </div>
 
             <div id="faq7" class="faq-close"> 
-            <label>Can i create my own password that is easy for me to remember?</label>
-            <button class="faqbt-closed">
+            <span>Can i create my own password that is easy for me to remember?</span>
+            <button aria-label="Expand" class="faq-bt-closed">
                 <img class="lightmode-only" src="img/Bg/pilner.svg" alt="pilner">
                 <img class="darkmode-only" src="img/Bg/pilner-darkmode.svg" alt="pilner">
             </button>
             </div>
 
             <div id="faq8" class="faq-close"> 
-            <label>What happens if i forget or lose my password?</label>
-            <button class="faqbt-closed">
+            <span>What happens if i forget or lose my password?</span>
+            <button aria-label="Expand" class="faq-bt-closed">
                 <img class="lightmode-only" src="img/Bg/pilner.svg" alt="pilner">
                 <img class="darkmode-only" src="img/Bg/pilner-darkmode.svg" alt="pilner">
             </button>
@@ -288,12 +287,12 @@
         </div>
         
         <div class="container-cont-box">
-            <button class="contact-box"><img src="img/Bg/phonebox1.svg" alt=""></button>
-            <button class="contact-box"><img src="img/Bg/chatbox.svg" alt=""></button>
+            <button aria-label="Contact us via Phone!" class="contact-box"><img src="img/Bg/phonebox1.svg" alt=""></button>
+            <button aria-label="Contact us via Chat!" class="contact-box"><img src="img/Bg/chatbox.svg" alt=""></button>
         </div>
 
-        <div class="contactbtn-con">
-            <button class="contactbtn">Contact us now</button>
+        <div class="contactbtn-con ">
+            <button aria-label="Contact us!" class="contactbtn btn-hover">Contact us now</button>
         </div>
 
     </div>
@@ -307,7 +306,7 @@
         <div class="textbox-sub">
             <form class="Subscirbe-form" action="#" method="get">
                 <input type="email" class="form-input" id="email" name="email" required placeholder="Your email">
-                <button class="email-subscribe">Subscirbe</button>
+                <button aria-label="Subscribe for email newsletter!" class="email-subscribe btn-hover">Subscirbe</button>
             </form>
         </div>
     </div>
