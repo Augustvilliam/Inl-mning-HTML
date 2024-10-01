@@ -87,6 +87,39 @@ html{
   color-scheme: light;
 
 }
+
+/* knappar */
+.btn-primary{
+  background-color: var(--clr-primary);
+  text-align: center;
+  color: var(--clr-btn-text);
+  justify-content: center;
+  display:none;
+  border-radius: 8px;
+  align-items: center;
+  text-decoration: none;
+  padding: 12px 25px;
+  gap:.5rem;
+  margin-right: .5rem;
+  width: 159px;
+}
+.btn-hover:hover {
+background-color: var(--clr-info);
+
+}
+
+.store-btn{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--clr-grey8);
+  background-color:var(--clr-font-head);
+  border-radius: .5rem;
+  width: 90%;
+  padding:.5rem;
+}
+
+
 h1{
   color: var(--clr-font-h);
 }
@@ -156,20 +189,10 @@ input:checked + .slider:before {
   } 
 
 /* HÄR SLUTAR SNODD KOD */
-.box-sdw{
+/* .box-sdw{
   box-shadow: 0 4px 8px 0 var(--clr-shadow);
-}
+} */
 
-.store-btn{
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--clr-grey8);
-  background-color:var(--clr-font-head);
-  border-radius: .5rem;
-  width: 90%;
-  padding:.5rem;
-}
 
 .c1-2bg{
   background-image: var(--clr-gradient)
@@ -187,31 +210,13 @@ input:checked + .slider:before {
   align-items: center;
   gap:1rem;
   padding-top:1rem;
-
-}
-.logo{
-  margin-left: 0.5rem;
-  padding-top: .16rem;
-}
-
-.btn-primary{
-    background-color: var(--clr-primary);
-    text-align: center;
-    color: var(--clr-btn-text);
-    justify-content: center;
-    display:none;
-    border-radius: 8px;
-    align-items: center;
-    text-decoration: none;
-    padding: 12px 25px;
-    gap:.5rem;
-    margin-right: .5rem;
-    width: 159px;
+  .logo{
+    margin-left: 0.5rem;
+    padding-top: .16rem;
   }
-.btn-hover:hover {
-background-color: var(--clr-info);
 
 }
+
 .feat {
     display: none;
     text-decoration: none;
@@ -220,6 +225,7 @@ background-color: var(--clr-info);
       color: var(--clr-text);
     }
   }
+
 .phone2{
   display:none;
 }
@@ -228,12 +234,10 @@ background-color: var(--clr-info);
     border: none;
     background-color: transparent;
     padding-right: .5rem;
-   
 }
 
-.dml {
+.dark-mode-lable {
       display: none;
- 
 }
 
 .c2 {
@@ -242,7 +246,6 @@ background-color: var(--clr-info);
   justify-content: center;
   display: flex;
   flex-direction: column; 
-  
 }
 
 .phone1{
@@ -260,11 +263,6 @@ background-color: var(--clr-info);
   font-weight:400 ;
   color: var(--clr-font-p);
   align-items: center;
-  p{
-    margin:0;
-    height: auto;
-  }
-
 }
 .storerek{
   display:flex;
@@ -685,12 +683,6 @@ font-size: 16px;
   }
 }
 
-
-
-
-
-
-
 @media (width > 768px){
   .tablet-only{
     display:block}
@@ -709,7 +701,7 @@ font-size: 16px;
       align-items: center;
       justify-content: center;
       padding-right:3rem;
-      .dml{
+      .dark-mode-lable{
         display:block
       }
     }

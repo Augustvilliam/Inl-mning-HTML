@@ -1,0 +1,14 @@
+@mixin btn {
+    background-color: var(--clr-primary);
+    text-align: center;
+    color: var(--clr-btn-text);
+    justify-content: center;
+    display:none;
+    border-radius: 8px;
+    align-items: center;
+    text-decoration: none;
+    padding: 12px 25px;
+    gap:.5rem;
+    margin-right: .5rem;
+    width: 159px;
+}
