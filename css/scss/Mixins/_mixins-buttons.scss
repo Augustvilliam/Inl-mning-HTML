@@ -1,0 +1,32 @@
+@mixin btn {
+    text-align: center;
+    border-radius: .5rem;
+    border: 1px solid grey;
+    text-decoration: none;
+    margin:1rem;
+}
+@mixin store-btn {
+    text-align: center;
+    border-radius: .5rem;
+    border: 1px solid grey;
+    text-decoration: none;
+    margin:1rem;
+
+}
+@mixin btn-round {
+    text-align: center;
+    border-radius: 50%;
+    text-decoration: none;
+    border: 1px solid grey;
+    margin:1rem;
+    padding:1rem;
+}
+@mixin btn-menu {
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid grey;
+    height: 2rem;
+    width:2rem;
+    margin:1rem;
+
+}

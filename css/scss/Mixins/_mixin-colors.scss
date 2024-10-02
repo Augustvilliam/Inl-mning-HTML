@@ -1,0 +1,9 @@
+@mixin btn-color{
+    color: white;
+    background-color: black;
+}
+
+@mixin btn-color-dark{
+    color: black;
+    background-color: white;
+}
