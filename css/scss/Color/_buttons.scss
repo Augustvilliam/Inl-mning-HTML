@@ -1,0 +1,22 @@
+.btn-primary{
+    @include button-colors (--color-btn-primary, --color-white, --color-info, --color-white,);
+}
+.btn-store{
+    @include button-colors (--color-store-btn, --color-shadow, --color-acordion-button, --color-white, --color-dark,);
+}
+.btn-store-dark{
+    @include button-colors (--color-store-btn, --color-shadow, --color-text3, --color-white, --color-dark,);
+}
+.btn-round{
+    @include button-colors (--color-round-bg, --color-white, --color-bg-grey, --color-white, --color-primary,);
+}
+.btn-round-secondary{
+    @include button-colors (--color-btn-primary, --color-white, --color-info, --color-white, --color-primary,);
+}
+.btn-sign-in{    
+    @include button-colors (--color-btn-primary, --color-white, --color-info, --color-white, --color-primary,);
+}
+.btn-subscribe{
+    @include button-colors (--color-btn-primary, --color-white, --color-info, --color-white, --color-primary,);
+
+}

@@ -1,0 +1,31 @@
+
+
+.darkmode-only-flex{
+    display: none;
+}
+.darkmode-only-block{
+    display:none;
+}
+.darkmode-only-grid{
+    display:none;
+}
+
+
+
+
+.dark{
+    .darkmode-only-flex{
+            display:flex
+        }
+    .darkmode-only-block{
+            display:block
+        }
+    .darkmode-only-grid{
+            display:grid
+        }
+    .lightmode-only{
+        display:none;
+        
+    }
+   
+}

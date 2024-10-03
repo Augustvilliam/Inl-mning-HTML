@@ -1,21 +1,13 @@
 .btn-primary{
     @include btn;
-    background-color: #6366F1;
-    color: white;
     max-width: 165px;
     height: 44px;
     display:flex;
     align-items: center;
     justify-content: center;
-    &:hover{
-        background-color: #292b85;
-    }
-
 }
 .btn-sign-in{
     @include btn;
-    background-color: #6366F1;
-    color: white;
     width: 165px;
     height:44px;
     display:none;
@@ -29,10 +21,9 @@
 }
 
 .btn-store{
-    @include store-btn;
+    @include btn;
     display: block;
     padding:.5rem 1.5rem;
-    background-color: black;
     max-width: 366px;
     @media(width > 768px){
         display:block;
@@ -43,42 +34,36 @@
         max-width:180px ;
     }
 }
-.btn-store{
-    @include store-btn;
-    @include btn-color;
-    padding:.5rem 1.5rem;
-    max-width: 366px;
-    @media(width > 768px){
-        display:block;
-        max-width:126px;
-    }
-    @media(width > 1400px){
-        display:block;
-        max-width:180px ;
-    }
-}
+
+
 .btn-store-dark{
-    @include store-btn;
-    @include btn-color-dark;
+    @include btn;
     padding:.5rem 1.5rem;
     max-width: 366px;
-    display:block;
+    display:none;
     @media(width > 768px){
-        display:block;
+        display:none;
         max-width:126px;
     }
     @media(width > 1400px){
-        display:block;
+        display:none;
         max-width:180px ;
     }
+
 }
 .btn-round{
     @include btn-round;
-
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+}
+
+
+.btn-round-secondary{
+    @include btn-round;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .btn-menu{
     @include btn-menu;
@@ -86,17 +71,15 @@
     align-items: center;
     justify-content: center;
     @media (width > 1400px){
-
         display:none;
     }
 }
 .btn-subscribe{
     @include btn;
+    cursor: pointer;
     display:flex;
     align-items: center;
     justify-content: center;
-    background-color:#6366f1;
-    color:white;
     border-radius: 0 .5rem .5rem 0;
     max-width: 114px;
     margin:0;
@@ -104,3 +87,4 @@
     max-width: 140px;
     }
 }
+

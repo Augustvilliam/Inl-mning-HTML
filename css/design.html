@@ -8,11 +8,11 @@
     <meta charset="UTF-8">
     <meta name="descripton" content="denna sida är ett skolarbete detta är bara hjälptext">
     <!-- <link rel="stylesheet" href="style.css"> -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="shortcut icon" href="img/Bg/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="container bg-gradient">
+    <div class="container">
         <div class="dark-mode">
             <span class="dark-mode-lable">Dark mode</span>
             <label for="darkmode-switch" class="switch">
@@ -45,26 +45,27 @@
             <div class="buttons-links">
                 <a class="nav-text" href="#">This is a link</a>
                 
-                <a class="btn-primary" href="#">
+                <a class="btn-primary" href="">
                     Press here<img src="img/Bg/pilright.svg" alt="">
                 </a>
                 
-                <a class="btn-sign-in" href="#">
+                <a class="btn-sign-in" href="">
                     <img src="/img/Bg/signin.svg" alt="">
                     sign in/up
                 </a>
                 
-                <a class=" btn-store"  href="#">
+                <a class=" btn-store lightmode-only box-sdw1"  href="#">
                     <img src="/img/Bg/appstore.svg" alt="">
                 </a>
-                <a class=" btn-store"  href="#">
+                <a class=" btn-store lightmode-only"  href="#">
                     <img src="/img/Bg/playstore.svg" alt="">
                 </a>
                 
-                <a class=" btn-store-dark"  href="#">
+                <a class=" btn-store-dark darkmode-only-block"  href="#">
                     <img src="/img/Bg/appstore-dark.svg" alt="">
                 </a>
-                <a class=" btn-store-dark"  href="#">
+                
+                <a class=" btn-store-dark darkmode-only-block"  href="#">
                     <img src="/img/Bg/playstore-dark.svg" alt="">
                 </a>
                
@@ -73,18 +74,20 @@
                 </a>
                
                 <a class="btn-round" href="#">
-                    <img src="/img/Bg/pilner.svg" alt="">
+                    <img class="lightmode-only" src="/img/Bg/pilner.svg" alt="">
+                    <img class="darkmode-only-block" src="/img/Bg/pilner-darkmode.svg" alt="">
+                </a>
+               
+                
+                <a class="btn-round-secondary .box-sdw1" href="#">
+                    <img src="/img/Bg/pilupp.svg" alt="">
                 </a>
                 
                     <form class="textbox" action="#" method="get">
-                        <input type="email" class="form-input" id="email" name="email" required placeholder="Your email">
+                        <input type="email" class="form-input" id="email" name="email" required placeholder="Your email"></input>
                         <button aria-label="Subscribe for email newsletter!" class="btn-subscribe">Subscirbe</button>
                     </form>
-                
-                
-                
-            
             </div>
     </div>
-    <script src="darkmode.js"></script>
+    <script src="/js/darkmode.js"></script>
 </body>
