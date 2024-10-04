@@ -1,11 +1,5 @@
 @mixin container{
     max-width: 540px;
-    display:flex;
-    flex-direction: column;
-    position:relative; 
-    box-sizing: border-box;
-    margin: 0 auto;
- 
     @media(width > 768px){
         max-width: 720px;
     }
