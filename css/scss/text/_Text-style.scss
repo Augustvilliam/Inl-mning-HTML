@@ -25,7 +25,6 @@
 
 .h1{font-size: 40px;
     font-weight: 800;
-
     color: var(--color-text1);
 }
 .h2{font-size: 32px;
@@ -89,3 +88,56 @@
     text-decoration: none;
     color: var(--color-text1)
 }
+
+
+.header{
+    font-size: 34.1px;
+    font-weight: 800;
+    color: var(--color-text1);
+    @media (width > 720px){
+        font-size: 44.3px;
+    }
+    @media (width > 1400px){
+        @include d4
+    }
+}
+.header-small{
+    font-size: 27.9px;
+    font-weight: 800;
+    color: var(--color-text1);
+    @media (width > 720px){
+        font-size: 33.5px;
+    }
+    @media (width > 1400px){
+        @include h1
+    }
+}
+
+h4{
+    @include h4
+}
+
+
+
+
+
+
+
+
+
+
+.general-text{
+    @include l-text
+}
+
+.s-text{
+    @include s-text
+}
+.m-text{
+    @include m-text
+}
+
+.h5{
+    @include h5
+}
+

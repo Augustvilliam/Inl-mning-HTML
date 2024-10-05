@@ -1,0 +1,8 @@
+.kort{
+    h1{
+        @include h5
+    }
+    p{
+        @include m-text
+    }
+}
