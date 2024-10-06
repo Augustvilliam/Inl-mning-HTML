@@ -1,3 +1,10 @@
-.box-sdw1{
-    box-shadow: 0 4px 8px 0 var(--color-dark);
+.box-sdw{
+    
+  @media(width > 768px){
+    box-shadow: 0 4px 4px 0 var(--color-shadow);
+  }
+  @media(width > 1400px){
+    box-shadow: 0 4px 4px 0 var(--color-shadow);
+  }
+  
   }

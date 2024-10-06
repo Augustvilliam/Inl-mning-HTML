@@ -8,7 +8,7 @@
     @include button-colors (--color-store-btn, --color-shadow, --color-text3, --color-white, --color-dark,);
 }
 .btn-round{
-    @include button-colors (--color-round-bg, --color-white, --color-bg-grey, --color-white, --color-primary,);
+    @include button-colors (--color-round-bg, --color-white, --color-shadow, --color-white, --color-primary,);
 }
 .btn-round-secondary{
     @include button-colors (--color-btn-primary, --color-white, --color-info, --color-white, --color-primary,);

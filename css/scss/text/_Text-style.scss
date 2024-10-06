@@ -117,21 +117,16 @@ h4{
     @include h4
 }
 
-
-
-
-
-
-
-
-
-
 .general-text{
     @include l-text
 }
 
 .s-text{
     @include s-text
+}
+.s-text-footer{
+    @include s-text;
+    color: var(--color-footer);
 }
 .m-text{
     @include m-text
